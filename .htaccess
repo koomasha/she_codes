@@ -1,0 +1,12 @@
+DirectoryIndex she_codes_connect.php 
+
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)/(.+)$ /she_codes_connect.php?class=$1&action=$2	 [NC,L,QSA]
+ErrorDocument 404 /errors/404.php
+ErrorDocument 403 /errors/403.php
+ErrorDocument 500 /errors/500.php
+</IfModule>
+

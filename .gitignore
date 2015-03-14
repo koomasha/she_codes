@@ -1,0 +1,10 @@
+scriptsandlogs/bat scripts/local code to server.bat
+scriptsandlogs/bat scripts/server code backup.bat
+scriptsandlogs/bat scripts/server code to local.bat
+*.bat
+scriptsandlogs/init_branches.php
+scriptsandlogs/init_branch_file.txt
+scriptsandlogs/init_db_file.txt
+scriptsandlogs/init_db.php
+scriptsandlogs/set_imgurl.php
+scriptsandlogs/test3.php
