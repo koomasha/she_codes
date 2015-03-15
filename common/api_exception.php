@@ -15,7 +15,7 @@ class api_exception extends Exception
 		$err['code'] = $this->code;
 		$err['message'] = $error_code[$this->code];
 		$err['info'] = $msg;
-		$err['logid'] = $this->logid;;
+		$err['logid'] = $this->logid;
         return $err;
     }
 	

@@ -53,7 +53,7 @@
 			$query = "select usrid,usrfbid,usrfirstname,usrlastname,usrimgurl,usrstatusname,ifnull(sum(ratingpoints),0) as usrrating 
 					from usr left join rating on usrid = ratingusrid  inner join usrstatus on usrusrstatusid = usrstatusid 
 					group by usrid,usrfbid,usrfirstname,usrlastname,usrimgurl,usrstatusname 
-					order by usrrating desc,usrfirstname, usrlastname limit ";
+					order by usrrating desc,usrfirstname asc, usrlastname asc limit ";
 			return $this->get_usrs_with_paging($query, array(),$numofusrs,$usrpage);
 		}
 		

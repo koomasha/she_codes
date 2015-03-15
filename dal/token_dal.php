@@ -10,7 +10,8 @@
 
 		public function verify_token($token)
 		{
-			$query = "select * from token where tokenunq = ? and tokenactive = 1 and tokentimemod > DATE_SUB(NOW(),INTERVAL 120 MINUTE)";
+			//$query = "select * from token where tokenunq = ? and tokenactive = 1 and tokentimemod > DATE_SUB(NOW(),INTERVAL 120 MINUTE)";
+			$query = "select * from token where tokenunq = ? and tokenactive = 1";
 			$params = array($token);	
 			$data = db_command::ExecuteQuery($this->db, $query, $params);
 			if(!empty($data))
